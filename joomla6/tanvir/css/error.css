@@ -1,0 +1,144 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+body{
+  font-family: 'Droid Arabic Kufi';
+  background:#344A5F url(../images/pattern.png) repeat top right;
+  color:#FFF;
+  height:100%;
+  text-shadow:2px 2px 0px #18232E;
+}
+.error-400{
+	background-color:#111;
+}
+.error-401{
+	background-color:#222;
+}
+.error-403{
+	background-color:#333;
+}
+.error-404{
+	background-color:#444;
+}
+.error-405{
+	background-color:#555;
+}
+.error-500{
+	background-color:#666;
+}
+.error-503{
+	background-color:#666;
+}
+h1{
+	font-size:145px;
+	padding:0px;
+	margin:0px;
+	font-weight:normal;
+	line-height:120px;
+	height:120px;
+}
+#content-wrap{
+	width:100%;
+	float:right;
+}
+#content{
+	width:100%;
+	float:right;
+}
+#logo{
+	width:100%;
+	float:right;
+	height:100px;
+	background:url(../images/logo.png) no-repeat top right;
+	background-size:auto 100% ;
+	margin-bottom:10px;
+}
+#container{
+	margin-left:auto;
+	margin-right:auto;
+	max-width:600px;
+	width:98%;
+}
+a{
+	text-decoration:none;
+	color:#FFF;
+	display:inline-table;
+}
+.link{
+	float:right;
+	width:100%;
+	margin-bottom:10px;
+}
+.social{
+	float:right;
+	width:100%;
+	margin-bottom:10px;
+}
+.social li a{
+	float:right;
+	width:25px;
+	height:25px;
+	background:#FFF;
+	margin-left:5px;
+}
+a#final-destination{
+	text-decoration:none;
+	color:#FFF;
+	display:inline-table;
+	padding:5px;
+	margin-bottom:5px;
+	margin-left:5px;
+	border:1px solid #FFF;
+	height:20px;
+}
+.links a{
+	text-decoration:none;
+	color:#FFF;
+	display:inline-table;
+	padding:5px;
+	margin-bottom:5px;
+	margin-left:5px;
+	border:1px solid #FFF;
+	height:20px;
+	line-height:20px;
+}
+.links a:hover, a:hover#final-destination{
+	background:#FFF;
+	color:#18232E;
+	text-shadow:1px 1px 0px #FFF;
+}
+ul,li{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+ul li{
+	display:inline-table;
+}
+.description{
+	margin-bottom:10px;
+}
+div.search{
+	border:1px solid #FFF;
+	max-width:50%;
+	height:30px;
+	min-width:240px;
+}
+div.search *{
+	border:none;
+	background:none;
+	color:#FFF;
+	padding:1px;
+	margin:1px;
+	line-height:25px;
+}
+div.search input{
+	width:80%;
+	float:right;
+}
+div.search button{
+	width:16%;
+	float:left;
+	line-height:20px;
+	background:#FFF url(../images/search-dark.png) no-repeat center center;
+	color:#18232E;
+	font-size:0px;
+}

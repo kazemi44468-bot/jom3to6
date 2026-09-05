@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" client="site">
+  <name>tanvir</name>
+  <creationDate>2026-09-05</creationDate>
+  <author>Rohollah Balvardi / Dima Group</author>
+  <authorEmail>r.balvardi@gmail.com</authorEmail>
+  <authorUrl>https://www.dima.ir</authorUrl>
+  <copyright>Copyright (C) 2005 - 2012 Dima Group. All rights reserved.</copyright>
+  <license>GNU General Public License version 2 or later</license>
+  <version>6.0.0</version>
+  <description>Tanvir template converted from Joomla 3 to Joomla 6.</description>
+  <files>
+    <filename>index.php</filename>
+    <filename>templateDetails.xml</filename>
+    <filename>joomla.asset.json</filename>
+    <filename>index.html</filename>
+    <filename>template_preview.png</filename>
+    <filename>template_thumbnail.png</filename>
+    <filename>favicon.ico</filename>
+    <filename>component.php</filename>
+    <filename>error.php</filename>
+    <filename>offline.php</filename>
+    <folder>css</folder>
+    <folder>images</folder>
+    <folder>fonts</folder>
+    <folder>js</folder>
+  </files>
+  <positions>
+    <position>banner</position>
+    <position>footer</position>
+    <position>debug</position>
+    <position>logo</position>
+    <position>search</position>
+    <position>menu</position>
+    <position>ticker</position>
+    <position>time</position>
+    <position>tab</position>
+    <position>slider</position>
+    <position>left</position>
+    <position>component</position>
+    <position>right</position>
+    <position>bottom</position>
+    <position>position-2</position>
+    <position>tab1</position>
+  </positions>
+  <config>
+    <fields name="params">
+      <fieldset name="advanced" label="TPL_TANVIR_FIELDSET_ADVANCED">
+        <field name="countdown" type="text" default="2016/01/01" label="CountDown Time" description="Count Down Time for Offline Page Standard Date Sample: 2016/01/01" />
+        <field name="loading" type="list" default="0" label="Jquery Page Loading" description="">
+          <option value="0">Disable</option>
+          <option value="1">Enable</option>
+        </field>
+        <field name="logo" type="media" default="joomla_black.png" label="Logo File" description="Logo File" directory="images" />
+      </fieldset>
+    </fields>
+  </config>
+</extension>
