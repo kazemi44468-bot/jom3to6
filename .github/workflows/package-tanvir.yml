@@ -1,0 +1,23 @@
+name: Package Tanvir Joomla 6
+
+on:
+  push:
+    branches:
+      - convert/tanvir-joomla6
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Package template
+        run: |
+          cd joomla6
+          zip -r ../tanvir-joomla6.zip tanvir
+      - name: Upload ZIP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tanvir-joomla6
+          path: tanvir-joomla6.zip
+          if-no-files-found: error
