@@ -7,7 +7,7 @@
   <authorUrl>https://www.dima.ir</authorUrl>
   <copyright>Copyright (C) 2005 - 2012 Dima Group. All rights reserved.</copyright>
   <license>GNU General Public License version 2 or later</license>
-  <version>6.0.1</version>
+  <version>6.0.2</version>
   <description>Tanvir template converted from Joomla 3 to Joomla 6.</description>
   <files>
     <filename>index.php</filename>
@@ -16,7 +16,6 @@
     <filename>index.html</filename>
     <filename>template_preview.png</filename>
     <filename>template_thumbnail.png</filename>
-    <filename>favicon.ico</filename>
     <filename>component.php</filename>
     <filename>error.php</filename>
     <filename>offline.php</filename>
