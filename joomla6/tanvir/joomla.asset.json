@@ -1,0 +1,54 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "tanvir",
+  "version": "6.0.0",
+  "description": "Web assets for the Tanvir Joomla 6 template.",
+  "license": "GPL-2.0-or-later",
+  "assets": {
+    "style.tanvir.template_css": {
+      "type": "style",
+      "uri": "templates/tanvir/css/template_css.css"
+    },
+    "style.tanvir.joomla": {
+      "type": "style",
+      "uri": "templates/tanvir/css/joomla.css"
+    },
+    "style.tanvir.typography": {
+      "type": "style",
+      "uri": "templates/tanvir/css/typography.css"
+    },
+    "style.tanvir.form": {
+      "type": "style",
+      "uri": "templates/tanvir/css/form.css"
+    },
+    "style.tanvir.animation": {
+      "type": "style",
+      "uri": "templates/tanvir/css/animation.css"
+    },
+    "style.tanvir.dima_icon": {
+      "type": "style",
+      "uri": "templates/tanvir/css/dima_icon.css"
+    },
+    "style.tanvir.bootstrap_rtl": {
+      "type": "style",
+      "uri": "templates/tanvir/css/bootstrap-responsive_rtl.css"
+    },
+    "script.tanvir.template": {
+      "type": "script",
+      "uri": "templates/tanvir/js/template.js",
+      "dependencies": ["jquery"]
+    },
+    "script.tanvir.wow": {
+      "type": "script",
+      "uri": "templates/tanvir/js/wow.js"
+    },
+    "script.tanvir.parallax": {
+      "type": "script",
+      "uri": "templates/tanvir/js/parallax.js"
+    },
+    "script.tanvir.pace": {
+      "type": "script",
+      "uri": "templates/tanvir/js/pace.min.js"
+    }
+  }
+}
