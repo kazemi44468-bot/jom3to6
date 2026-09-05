@@ -1,54 +1,25 @@
 {
   "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
   "name": "tanvir",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Web assets for the Tanvir Joomla 6 template.",
   "license": "GPL-2.0-or-later",
-  "assets": {
-    "style.tanvir.template_css": {
-      "type": "style",
-      "uri": "templates/tanvir/css/template_css.css"
-    },
-    "style.tanvir.joomla": {
-      "type": "style",
-      "uri": "templates/tanvir/css/joomla.css"
-    },
-    "style.tanvir.typography": {
-      "type": "style",
-      "uri": "templates/tanvir/css/typography.css"
-    },
-    "style.tanvir.form": {
-      "type": "style",
-      "uri": "templates/tanvir/css/form.css"
-    },
-    "style.tanvir.animation": {
-      "type": "style",
-      "uri": "templates/tanvir/css/animation.css"
-    },
-    "style.tanvir.dima_icon": {
-      "type": "style",
-      "uri": "templates/tanvir/css/dima_icon.css"
-    },
-    "style.tanvir.bootstrap_rtl": {
-      "type": "style",
-      "uri": "templates/tanvir/css/bootstrap-responsive_rtl.css"
-    },
-    "script.tanvir.template": {
-      "type": "script",
-      "uri": "templates/tanvir/js/template.js",
-      "dependencies": ["jquery"]
-    },
-    "script.tanvir.wow": {
-      "type": "script",
-      "uri": "templates/tanvir/js/wow.js"
-    },
-    "script.tanvir.parallax": {
-      "type": "script",
-      "uri": "templates/tanvir/js/parallax.js"
-    },
-    "script.tanvir.pace": {
-      "type": "script",
-      "uri": "templates/tanvir/js/pace.min.js"
-    }
-  }
+  "assets": [
+    {"name":"template.tanvir.css","type":"style","uri":"css/template_css.css"},
+    {"name":"template.tanvir.joomla","type":"style","uri":"css/joomla.css"},
+    {"name":"template.tanvir.typography","type":"style","uri":"css/typography.css"},
+    {"name":"template.tanvir.form","type":"style","uri":"css/form.css"},
+    {"name":"template.tanvir.animation","type":"style","uri":"css/animation.css"},
+    {"name":"template.tanvir.icons","type":"style","uri":"css/dima_icon.css"},
+    {"name":"template.tanvir.bootstrap.rtl","type":"style","uri":"css/bootstrap-responsive_rtl.css"},
+    {"name":"template.tanvir","type":"script","uri":"js/template.js","attributes":{"defer":true},"dependencies":["jquery"]},
+    {"name":"template.tanvir.wow","type":"script","uri":"js/wow.js","attributes":{"defer":true}},
+    {"name":"template.tanvir.parallax","type":"script","uri":"js/parallax.js","attributes":{"defer":true}},
+    {"name":"template.tanvir.pace","type":"script","uri":"js/pace.min.js","attributes":{"defer":true}},
+    {"name":"template.tanvir.offline","type":"style","uri":"css/offline.css"},
+    {"name":"template.tanvir.offline.rtl","type":"style","uri":"css/offline_rtl.css"},
+    {"name":"template.tanvir.offline.jquery","type":"script","uri":"js/jquery.min.js"},
+    {"name":"template.tanvir.countdown","type":"script","uri":"js/jquery.countdown.js","dependencies":["template.tanvir.offline.jquery"]},
+    {"name":"template.tanvir.site","type":"preset","dependencies":["template.tanvir.css#style","template.tanvir.joomla#style","template.tanvir.typography#style","template.tanvir.form#style","template.tanvir.animation#style","template.tanvir.icons#style","template.tanvir.bootstrap.rtl#style","template.tanvir#script","template.tanvir.wow#script","template.tanvir.parallax#script"]}
+  ]
 }
