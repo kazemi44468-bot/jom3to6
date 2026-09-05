@@ -1,0 +1,17 @@
+name: Package Tanvir Joomla 6 Release
+on:
+  push:
+    branches:
+      - release/tanvir-joomla6
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create installable ZIP
+        run: zip -r tanvir-joomla6-install.zip . -x '.git/*' '.github/*' 'CONVERSION-STATUS.md'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tanvir-joomla6-install
+          path: tanvir-joomla6-install.zip
+          if-no-files-found: error
