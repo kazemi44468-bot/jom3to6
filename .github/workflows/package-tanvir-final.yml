@@ -1,0 +1,32 @@
+name: Package Tanvir Joomla 6 Final
+
+on:
+  push:
+    branches:
+      - release/tanvir-joomla6-final
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate installer manifest
+        run: |
+          test -f templateDetails.xml
+          test ! -f favicon.ico
+          test -f images/favicon.ico
+      - name: Create Joomla installer ZIP
+        run: |
+          zip -r tanvir-joomla6-6.0.2.zip . \
+            -x '.git/*' \
+               '.github/*' \
+               'README*' \
+               'tanvir-joomla6-*.zip'
+      - name: Upload installer ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: tanvir-joomla6-6.0.2
+          path: tanvir-joomla6-6.0.2.zip
+          if-no-files-found: error
